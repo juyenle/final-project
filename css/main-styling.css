@@ -2,8 +2,6 @@ body {
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
   line-height: 1.5;
-  cursor: default;
-  font-color: black;
 }
 
 .wrapper {
@@ -23,7 +21,7 @@ h3 {
 
 p {
   margin: 0 0 1.5em 0;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .button {
@@ -38,10 +36,15 @@ p {
   border-radius: 5px;
 }
 
+nav {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 #page-header {
   background: #97c0e6;
   overflow: hidden;
-  padding: 0 3%;
+  padding: 5px;
 }
 
 /*#page-header h1 {
@@ -72,18 +75,15 @@ p {
   font-weight: bold;
 }
 
-#page-header nav strong {
-  text-transform: uppercase;
-}
 
 .buttons {
   overflow: hidden;
-  padding: 2% 0;
+  padding: 2px;
 }
 
 .actions {
   float: left;
   width: 27%;
-  padding: 2% 3%;
+  padding: 20px;
   box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
 }
