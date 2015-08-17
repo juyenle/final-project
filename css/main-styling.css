@@ -4,18 +4,19 @@
   clear: both;
 }
 
+header {
+  background-color: #97c0e6;
+}
+
 html {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', serif;
 }
 
 h3 {
+  font-family: 'roboto slab', serif;
   font-size: 1.5em;
-  margin: 10px 0;
   font-weight: bold;
-}
-
-header {
-  background-color: #97c0e6;
+  margin: 10px 0;
 }
 
 .logo img {
@@ -28,6 +29,7 @@ header {
 
 nav {
   float: right;
+  font-family: 'roboto slab', serif;
   color: white;
   font-size: 1.25em;
   font-weight: bold;
@@ -60,10 +62,10 @@ a:hover {
 }
 
 .wrapper {
-  display: flex;
+  display: block;
   max-width: 950px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 20px;
 }
 
 .action1-4 {
@@ -71,14 +73,13 @@ a:hover {
   width: 22%;
   text-align: center;
   font-size: 1em;
-  padding: 10px 14px;
+  padding: 10px 13px;
+  border-right: 1px solid black;
 }
 
-.info {
-  max-width: 950px;
-  margin: 0 auto;
-  padding: 10px 10px;
-  display: flex;
+.action1-4:last-child {
+  margin-right: 0;
+  border-right: 0px;
 }
 
 .welcomemsg {
@@ -90,7 +91,7 @@ a:hover {
 
 .news {
   float: right;
-  width: 40%;
+  width: 60%;
 }
 
 footer {
