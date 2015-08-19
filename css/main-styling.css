@@ -4,12 +4,12 @@
   clear: both;
 }
 
-header {
-  background-color: #97c0e6;
-}
-
 html {
   font-family: 'Roboto', serif;
+}
+
+header {
+  background-color: #97c0e6;
 }
 
 h3 {
@@ -19,20 +19,21 @@ h3 {
   margin: 10px 0;
 }
 
-.logo img {
-  padding: 15px 30px;
-}
-
 .logo {
   float: left;
+}
+
+.logo img {
+  padding: 15px 30px;
 }
 
 nav {
   float: right;
   font-family: 'roboto slab', serif;
   color: white;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: bold;
+  margin-right: 30px;
 }
 
 nav li {
@@ -64,7 +65,7 @@ a:hover {
 .wrapper {
   display: block;
   max-width: 950px;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 0 20px;
 }
 
@@ -85,19 +86,29 @@ a:hover {
 .welcomemsg {
   float: left;
   width: 30%;
-  font-size: 1em;
-  padding-right: 20px;
+  font-size: .9em;
+  padding: 20px 13px;
 }
 
 .news {
   float: right;
   width: 60%;
+  font-size: 1em;
+  padding: 20px 13px;
+}
+
+.sponsor {
+  float: left;
+  width:
 }
 
 footer {
   clear: both;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
+  margin: 10px;
+  font-size: .9em;
+  font-weight: bold;
 }
 
 /* ==============
@@ -107,7 +118,6 @@ footer {
 /* Only on screens smaller than 768px */
 @media (max-width: 768px) {
 
-  /* Center the logo */
   .logo {
     float: none;
     text-align: center;
@@ -117,7 +127,6 @@ footer {
     float: none;
   }
 
-  /* Make links full-width, remove padding */
   nav li {
     display: block;
     border-bottom: 1px solid white;
@@ -128,13 +137,11 @@ footer {
     border-top: 1px solid white;
   }
 
-  /* Give anchors padding so there's more surface area to tap on mobile */
   nav a {
     display: inline-block;
     padding: 35px 20px;
   }
 
-  /* Undo float and set as full width */
   .action1-4 {
     float: none;
     width: 100%;
@@ -143,21 +150,3 @@ footer {
     border-bottom: 1px solid black;
   }
 }
-
-/*
-
-
-.button {
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  color: inherit;
-  display: block;
-  text-align: center;
-  box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
-  border-radius: 5px;
-}
-
-
-*/
