@@ -110,6 +110,18 @@ a:hover {
   width:
 }
 
+input[type=text] {
+  font-family: 'Roboto', serif;
+}
+
+input:valid {
+  border: 1px solid black;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
 footer {
   clear: both;
   margin: 0 auto;
