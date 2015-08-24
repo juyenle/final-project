@@ -12,11 +12,19 @@ header {
   background-color: #97c0e6;
 }
 
-h3 {
-  font-family: 'roboto slab', serif;
+h1 {
   font-size: 1.5em;
   font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: bold;
   margin: 10px 0;
+}
+
+p {
+  font-size: 1em;
 }
 
 .logo {
@@ -83,7 +91,7 @@ a:hover {
   border-right: 0px;
 }
 
-.welcomemsg {
+.welcome-msg {
   float: left;
   width: 30%;
   font-size: .9em;
