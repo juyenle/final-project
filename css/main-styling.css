@@ -1,89 +1,152 @@
-body {
-  font-family: 'Roboto Slab', serif;
-  font-size: 18px;
-  line-height: 1.5;
-  cursor: default;
-  font-color: black;
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.wrapper {
-  max-width: 1280px;
-  margin: auto;
+html {
+  font-family: 'Roboto', serif;
 }
 
-h1 {
-  font-size: 2em;
-  line-height: 1;
+header {
+  background-color: #97c0e6;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-family: 'roboto slab', serif;
+  font-size: 1.5em;
   font-weight: bold;
+  margin: 10px 0;
 }
 
-p {
-  margin: 0 0 1.5em 0;
-  font-size: 14px;
+.logo {
+  float: left;
 }
 
-.button {
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  color: inherit;
-  display: block;
-  text-align: center;
-  box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
-  border-radius: 5px;
+.logo img {
+  padding: 15px 30px;
 }
 
-#page-header {
-  background: #97c0e6;
-  overflow: hidden;
-  padding: 0 3%;
-}
-
-/*#page-header h1 {
-  insert img logo
-}*/
-
-#page-header a {
-  color: white;
-  text-decoration: none;
-}
-
-#page-header nav {
+nav {
   float: right;
+  font-family: 'roboto slab', serif;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 30px;
 }
 
-#page-header nav li {
-  float: left;
+nav li {
+  display: inline-block;
+  padding: 50px 20px;
+  line-height: 5px;
 }
 
-#page-header nav a {
-  display: block;
-  /*double check display after logo is input*/
-  padding: 20px 15px;
-}
-
-#page-header nav li a:hover {
+a {
+  text-decoration: none;
   color: inherit;
+}
+
+a:hover {
+  color: black;
+}
+
+.banner {
+  padding: 0 20px;
+  position: relative;
+  top: inherit;
+}
+
+.banner img {
+  display: block;
+  margin: 15px auto;
+}
+
+.wrapper {
+  display: block;
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.action1-4 {
+  float: left;
+  width: 22%;
+  text-align: center;
+  font-size: 1em;
+  padding: 10px 13px;
+  border-right: 1px solid black;
+}
+
+.action1-4:last-child {
+  margin-right: 0;
+  border-right: 0px;
+}
+
+.welcomemsg {
+  float: left;
+  width: 30%;
+  font-size: .9em;
+  padding: 20px 13px;
+}
+
+.news {
+  float: right;
+  width: 60%;
+  font-size: 1em;
+  padding: 20px 13px;
+}
+
+.sponsor {
+  float: left;
+  width:
+}
+
+footer {
+  clear: both;
+  margin: 0 auto;
+  padding: 20px;
+  margin: 10px;
+  font-size: .9em;
   font-weight: bold;
 }
 
-#page-header nav strong {
-  text-transform: uppercase;
-}
+/* ==============
+   Responsive CSS
+   ============== */
 
-.buttons {
-  overflow: hidden;
-  padding: 2% 0;
-}
+/* Only on screens smaller than 768px */
+@media (max-width: 768px) {
 
-.actions {
-  float: left;
-  width: 27%;
-  padding: 2% 3%;
-  box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+  .logo {
+    float: none;
+    text-align: center;
+  }
+
+  nav ul {
+    float: none;
+  }
+
+  nav li {
+    display: block;
+    border-bottom: 1px solid white;
+    padding: 0;
+  }
+
+  nav li:first-child {
+    border-top: 1px solid white;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 35px 20px;
+  }
+
+  .action1-4 {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+  }
 }
