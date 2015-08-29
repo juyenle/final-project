@@ -8,10 +8,6 @@ html {
   font-family: 'Roboto', serif;
 }
 
-header {
-  background-color: #97c0e6;
-}
-
 h1 {
   font-size: 1.5em;
   font-weight: bold;
@@ -36,10 +32,11 @@ p {
 }
 
 nav {
+  background-color: #97c0e6;
   float: right;
-  font-family: 'roboto slab', serif;
+  font-family: 'roboto', serif;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: bold;
   margin-right: 30px;
 }
