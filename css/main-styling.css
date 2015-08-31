@@ -1,11 +1,46 @@
 .clearfix:after {
-  content: "";
-  display: table;
+  content: ".";
+  display: block;
   clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
-html {
+body {
+  color: inherit;
+  font-size: 1em;
+  line-height: 1.4;
   font-family: 'Roboto', serif;
+  font-weight: 300;
+}
+
+header {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 15px;
+  overflow: hidden;
+}
+
+.logo {
+  float: left;
+}
+
+/*.banner {
+  height: 700px;
+  background: url(../images/header_bg.jpg) no-repeat top center #131e27;
+  padding-top: 32px;
+}*/
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #96c0e6;
 }
 
 h1 {
@@ -19,41 +54,28 @@ h3 {
   margin: 10px 0;
 }
 
-p {
-  font-size: 1em;
-}
-
-.logo {
-  float: left;
-}
-
-.logo img {
-  padding: 15px 30px;
-}
-
 nav {
-  background-color: #97c0e6;
   float: right;
-  font-family: 'roboto', serif;
-  color: white;
+  font-weight: 500;
+  color: black;
   font-size: 1.25em;
-  font-weight: bold;
-  margin-right: 30px;
+  width: auto;
+  height: auto;
 }
 
-nav li {
+nav ul li {
   display: inline-block;
   padding: 50px 20px;
   line-height: 5px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+nav ul li:hover {
+  background-color: #96c0e6;
+  color: white;
 }
 
-a:hover {
-  color: black;
+nav ul li a:hover {
+  color: white;
 }
 
 .banner {
