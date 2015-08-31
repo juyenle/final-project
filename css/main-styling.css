@@ -90,6 +90,10 @@ nav ul li a:hover {
 }
 
 .buttons {
+    max-width: 950px;
+    margin: auto;
+    padding: 20px 20px;
+  }
 }
 
 .action1-4 {
