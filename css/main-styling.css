@@ -28,12 +28,6 @@ header {
   float: left;
 }
 
-/*.banner {
-  height: 700px;
-  background: url(../images/header_bg.jpg) no-repeat top center #131e27;
-  padding-top: 32px;
-}*/
-
 a {
   text-decoration: none;
   color: inherit;
@@ -44,6 +38,11 @@ a:hover {
 }
 
 h1 {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+h2 {
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -51,7 +50,9 @@ h1 {
 h3 {
   font-size: 1.25em;
   font-weight: bold;
-  margin: 10px 0;
+  background-color: grey;
+  color: white;
+  padding-left: 10px;
 }
 
 nav {
@@ -79,65 +80,132 @@ nav ul li a:hover {
 }
 
 .banner {
-  padding: 0 20px;
-  position: relative;
-  top: inherit;
+  margin: 25px;
+  height: 489px;
+  background: url(../images/banner.jpg) no-repeat center;
 }
 
-.banner img {
-  display: block;
-  margin: 15px auto;
+.banner h1 {
+  font-size: 3em;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 270px 120px;
+}
+
+.banner-vol {
+  margin: 25px;
+  height: 339px;
+  background: url(../images/volunteer_banner.jpg) no-repeat center;
 }
 
 .buttons {
-    max-width: 950px;
-    margin: auto;
-    padding: 20px 20px;
-  }
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 20px auto;
+  position: relative;
+}
+
+.circular {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 .action1-4 {
-  float: left;
+  margin: 0 auto;
   width: 22%;
   text-align: center;
   font-size: 1em;
-  margin: 15px 13px;
-  border-right: 1px solid black;
+  /*border-right: 1px solid black;*/
+  padding: 10px;
+  position: relative;
+  display: inline-block;
 }
 
 .action1-4:last-child {
-  margin-right: 0;
   border-right: 0px;
 }
 
 .wrapper {
-  max-width: 950px;
-  margin: auto;
-  padding: 20px 20px;
+  max-width: 960px;
+  margin: 20px auto;
+  display: relative;
 }
 
-.welcomemsg {
-  background-color: black;
+.welcome-msg {
+  float: left;
+  width: 45%;
+  padding-bottom: 30px;
 }
 
 .news {
-  background-color: black;
+  float: right;
+  width: 50%;
+}
+
+.connect {
+  float: right;
+  width: 50%;
+  padding-bottom: 25px;
+}
+
+.success {
+  clear: left;
+  width: 45%;
+  padding-bottom: 30px;
+}
+
+.icon {
+  float: left;
+  padding-right: 15px;
+  transition: transform 0.5s ease;
+  transform: scale(0.8);
+}
+
+.icon:hover {
+  transform: scale(.9);
+}
+
+.story {
+  float: left;
+  padding-right: 15px;
+  padding-bottom: 4px;
 }
 
 .sponsor {
-  background-color: black;
-
+  clear: left;
+  width: 45%;
+  padding-top: 10px;
 }
 
 footer {
-  max-width: 950px;
-  margin: auto;
-  padding: 50px 0 20px;
+  clear: both;
+  height: 10px;
+  width: 960px;
+  margin: 50px auto;
+  padding: 20px 0 20px;
   font-size: .9em;
   font-weight: bold;
   text-align: center;
+  color: white;
+  background-color: #96c0e6;
+}
 
 /*volunteer page coding starts*/
+
+.form {
+  max-width: 600px;
+  margin: 50px auto;
+  display: relative;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+textarea {
+  width: 550px;
+  height: 150px;
+}
 
 input[type=text] {
   font-family: 'Roboto', serif;
@@ -149,6 +217,10 @@ input:valid {
 
 input:invalid {
   border: 1px solid red;
+}
+
+input[type=button] {
+  font-size: 2em;
 }
 
 /*volunteer page coding ends*/
